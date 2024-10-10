@@ -1,33 +1,36 @@
+### Revisen si tienen artisan y php
+
+1.  Pongan los comandos en la terminal
+
+    -php -v
+    -composer -v
+
+2. Si lo tienen solo tienen que correr el comando para que instale las dependencias
+
+    composer install
+
+3. Si se dan cuenta tienen un archivo que se llama .env.example cambienle el nombre a solo .env y le ponen esto para que jale con nuestra base
+
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=posAnalisis 
+    DB_USERNAME=root
+    DB_PASSWORD=
+
+4. Ponen el comando php artisan key:generate para que haga una key
+
+5. Este comando crea la base de datos con el modelo que ya tenemos
+
+    php artisan migrate
+
+6. php artisan db:seed (esto mete un usuario el usuario es admin@gmail.com y la pass 12345678)
+
+7. La configuracion de arriba solo se hace cuando hacen el clone incial luego de esto solo con este comando y con el xampp abierto corren el proyecto
+
+    php artisan serve
 
 
-# Como iniciar el proyecto
 
 
-
-## Como instalar en Local
-1. tenes que tener iniciado el xamp con el sql y el apache si o si.
-2. tienen que tener instalado el composer los dos comandos de abajo muestran si lo tienen xD
-
-
-```bash
-php -v
-```
-```bash
-composer -v
-```
-
-1. El comando de abajo hace el insert de las tablas y cosas de los productos en la base de datos. Para que funcione esto crean la base de datos con el nombre de posAnalisis solo eso tienen que hacer
-
-
-- Correr la migraciones del proyecto
-```bash
-php artisan migrate
-```
-- el usuario pa probar esta mondada es admin@gmail.com y la contra 12345678
-```
-- Ejecute el proyecto
-```bash
-php artisan serve
-```
-
-
+Cualquier error fabian les ayuda xD
