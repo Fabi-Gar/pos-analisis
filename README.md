@@ -33,4 +33,9 @@
 
 
 
+Se esta utilizando Laravel 11, PHP, html, css y blade.php
+
+para base de datos mysql
+
+
 Cualquier error fabian les ayuda xD
